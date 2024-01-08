@@ -1,8 +1,22 @@
 console.log('***** Music Collection *****')
 // Safe Zone -- Write code below this line
-
-
-
+const myCollection = [];
+function addToCollection(collection, title, artist, yearPublished) {
+  const newAlbum = {
+    title: title,
+    artist: artist,
+    yearPublished: yearPublished
+  } ;
+  collection.push(newAlbum);
+  return newAlbum;
+}
+addToCollection(myCollection, 'Boston', 'Boston', 1976);
+addToCollection(myCollection, 'Physical Graffiti', 'Led Zeppelin', 1975);
+addToCollection(myCollection, 'Nevermind', 'Nirvana', 1991);
+addToCollection(myCollection, 'The Stranger', 'Billy Joel', 1977);
+addToCollection(myCollection, 'Led Zeppelin II', 'Led Zeppelin', 1969);
+addToCollection(myCollection, 'Metallica', 'Metallica', 1991);
+console.log(myCollection);
 
 
 
