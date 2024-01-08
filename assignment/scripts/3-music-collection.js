@@ -18,6 +18,12 @@ addToCollection(myCollection, 'Led Zeppelin II', 'Led Zeppelin', 1969);
 addToCollection(myCollection, 'Metallica', 'Metallica', 1991);
 console.log(myCollection);
 
+function showCollection(collection) {
+  for (let i = 0; i < myCollection.length; i++) {
+    console.log(collection[i].title + ' by ' + collection[i].artist + ', released in ' + collection[i].yearPublished);
+  }
+} ; 
+showCollection(myCollection);
 
 
 
