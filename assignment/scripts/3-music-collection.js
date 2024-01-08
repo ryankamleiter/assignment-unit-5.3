@@ -25,6 +25,20 @@ function showCollection(collection) {
 } ; 
 showCollection(myCollection);
 
+function findByArtist(collection, artist) {
+  const matches = [];
+    for (let i = 0; i < collection.length; i++) {
+      if (collection[i].artist === artist) {
+        matches.push(collection[i]);
+      }
+    }
+    return matches;
+}
+console.log('Albums by Boston: ', findByArtist(myCollection, 'Boston'));
+console.log('Albums by Jimi Hendrix: ', findByArtist(myCollection, 'Jimi Hendrix'));
+
+
+
 
 
 
